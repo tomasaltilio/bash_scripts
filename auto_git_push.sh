@@ -74,7 +74,7 @@ log_info "Comenzando el proceso de autocommit"
 cd ~/code/$GITHUB_USERNAME
 
 repos=$(find_git_repos)
-
+  
 if [ -z "$repos" ]; then
     log_warning "No se encontraron challenges"
     exit 0
